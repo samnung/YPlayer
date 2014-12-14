@@ -35,14 +35,9 @@
 	}
 }
 
-- (void) applicationWillTerminate:(NSNotification *)aNotification
+- (BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
-	// Insert code here to tear down your application
-}
-
-- (void) application:(NSApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
-{
-	NSLog(@"userInfo = %@", userInfo);
+	return YES;
 }
 
 
