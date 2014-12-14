@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F26700D04FC5D75F5A79F60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F267E1B10C5E153E598A382 /* ViewController.m */; };
+		6F2670F8DA82ED2ABE280B2D /* YPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2676638F5B64721D415160 /* YPlayerTests.m */; };
+		6F2671FB22934EC8501CC733 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2679B3EB2CF62FE94E8C33 /* Images.xcassets */; };
+		6F2673EA368C042427CD0835 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2671DC34505614B4DA7F3F /* Main.storyboard */; };
+		6F267618A27A65F3F6FBB29B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F26721E80D8BF3F8FD567F1 /* main.m */; };
+		6F267CB346129C860BF93646 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F267ABD90AF48B214DFDFDE /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F267EE845CE62987E113B57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2671B841D0798ECE23F87A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F26795D74DF4CB03D9CB178;
+			remoteInfo = YPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F26712C8CCB035841CA24C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		6F267133807723F1D05E3463 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6F26721E80D8BF3F8FD567F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6F26763ADC3B6A492E0E812C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F2676638F5B64721D415160 /* YPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPlayerTests.m; sourceTree = "<group>"; };
+		6F2677CA9B2752C9A7F2ED62 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6F26786023EC1BE1F3057885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		6F2679B3EB2CF62FE94E8C33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6F267ABBC35BDEE16C93E477 /* YPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F267ABD90AF48B214DFDFDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6F267CF017BE48C2CC53527E /* YPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F267E1B10C5E153E598A382 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F2671FBBB05A45F573DE463 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F267FFCDEE4380B56DCE8DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F267002ADAA64C0EEEDE75B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F26786023EC1BE1F3057885 /* Info.plist */,
+				6F26721E80D8BF3F8FD567F1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F2670627AE88563F6C6083D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F267ABBC35BDEE16C93E477 /* YPlayer.app */,
+				6F267CF017BE48C2CC53527E /* YPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F267140CC620D235FD70CF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F26712C8CCB035841CA24C8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F26779DEF1B09800532806C /* YPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F267140CC620D235FD70CF4 /* Supporting Files */,
+				6F2676638F5B64721D415160 /* YPlayerTests.m */,
+			);
+			path = YPlayerTests;
+			sourceTree = "<group>";
+		};
+		6F267B91E055DE3F1F14AE43 = {
+			isa = PBXGroup;
+			children = (
+				6F2670627AE88563F6C6083D /* Products */,
+				6F267C748C575D98A5CDF25D /* YPlayer */,
+				6F26779DEF1B09800532806C /* YPlayerTests */,
+			);
+			sourceTree = "<group>";
+		};
+		6F267C748C575D98A5CDF25D /* YPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6F267002ADAA64C0EEEDE75B /* Supporting Files */,
+				6F2679B3EB2CF62FE94E8C33 /* Images.xcassets */,
+				6F267133807723F1D05E3463 /* AppDelegate.h */,
+				6F267ABD90AF48B214DFDFDE /* AppDelegate.m */,
+				6F2671DC34505614B4DA7F3F /* Main.storyboard */,
+				6F2677CA9B2752C9A7F2ED62 /* ViewController.h */,
+				6F267E1B10C5E153E598A382 /* ViewController.m */,
+			);
+			path = YPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F26795D74DF4CB03D9CB178 /* YPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F26702BC70E9791283AB565 /* Build configuration list for PBXNativeTarget "YPlayer" */;
+			buildPhases = (
+				6F2679B68D962C7AB4716A3E /* Sources */,
+				6F267FFCDEE4380B56DCE8DA /* Frameworks */,
+				6F267A4FFBA5EDFE6EC20DA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YPlayer;
+			productName = YPlayer;
+			productReference = 6F267ABBC35BDEE16C93E477 /* YPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F267B9B851B2778E859AB45 /* YPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F267AEC8F186A11AA4B6A02 /* Build configuration list for PBXNativeTarget "YPlayerTests" */;
+			buildPhases = (
+				6F2678E7EB3E89CE4FCBE9E5 /* Sources */,
+				6F2671FBBB05A45F573DE463 /* Frameworks */,
+				6F2674ED540787013110B69A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F267AA22A37BF766C5F3364 /* PBXTargetDependency */,
+			);
+			name = YPlayerTests;
+			productName = YPlayerTests;
+			productReference = 6F267CF017BE48C2CC53527E /* YPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F2671B841D0798ECE23F87A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Roman Kříž";
+				TargetAttributes = {
+					6F26795D74DF4CB03D9CB178 = {
+						DevelopmentTeam = P36MPV2ZKM;
+					};
+				};
+			};
+			buildConfigurationList = 6F267FD8AB4100BAF6AB2FF8 /* Build configuration list for PBXProject "YPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6F267B91E055DE3F1F14AE43;
+			productRefGroup = 6F2670627AE88563F6C6083D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F26795D74DF4CB03D9CB178 /* YPlayer */,
+				6F267B9B851B2778E859AB45 /* YPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F2674ED540787013110B69A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F267A4FFBA5EDFE6EC20DA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F2671FB22934EC8501CC733 /* Images.xcassets in Resources */,
+				6F2673EA368C042427CD0835 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F2678E7EB3E89CE4FCBE9E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F2670F8DA82ED2ABE280B2D /* YPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2679B68D962C7AB4716A3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F267CB346129C860BF93646 /* AppDelegate.m in Sources */,
+				6F267618A27A65F3F6FBB29B /* main.m in Sources */,
+				6F26700D04FC5D75F5A79F60 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F267AA22A37BF766C5F3364 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F26795D74DF4CB03D9CB178 /* YPlayer */;
+			targetProxy = 6F267EE845CE62987E113B57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F2671DC34505614B4DA7F3F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F26763ADC3B6A492E0E812C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F2674FAA6470E73DB724B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = YPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6F26758F6528FF1BA71F008A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YPlayer.app/Contents/MacOS/YPlayer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		6F2675C52266472B72F7133C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6F26784B8CAFFC5F38ACA4A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = YPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6F267A3F2F8E515029B7BF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YPlayer.app/Contents/MacOS/YPlayer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		6F267AAA1F518DB70CB7F89E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F26702BC70E9791283AB565 /* Build configuration list for PBXNativeTarget "YPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F26784B8CAFFC5F38ACA4A1 /* Debug */,
+				6F2674FAA6470E73DB724B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F267AEC8F186A11AA4B6A02 /* Build configuration list for PBXNativeTarget "YPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F26758F6528FF1BA71F008A /* Debug */,
+				6F267A3F2F8E515029B7BF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F267FD8AB4100BAF6AB2FF8 /* Build configuration list for PBXProject "YPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2675C52266472B72F7133C /* Debug */,
+				6F267AAA1F518DB70CB7F89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F2671B841D0798ECE23F87A /* Project object */;
+}
