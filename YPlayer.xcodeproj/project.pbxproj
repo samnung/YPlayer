@@ -14,6 +14,7 @@
 		6F267618A27A65F3F6FBB29B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F26721E80D8BF3F8FD567F1 /* main.m */; };
 		6F26774067962220B20F4299 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2672C64421955C217FA262 /* PlayerView.m */; };
 		6F267CB346129C860BF93646 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F267ABD90AF48B214DFDFDE /* AppDelegate.m */; };
+		6F267ED572E175D05CDD0E35 /* HCYoutubeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F267A7B8807BD86B3CA49F0 /* HCYoutubeParser.m */; };
 		DC4D81FD96BBBC92F5A6E1C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 269E7F7D7FF6879984721775 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +38,10 @@
 		6F2676638F5B64721D415160 /* YPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPlayerTests.m; sourceTree = "<group>"; };
 		6F26767D8E1CC0F31B740AC8 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
 		6F2677CA9B2752C9A7F2ED62 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6F267842CCB5B12852B1FCF5 /* HCYoutubeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCYoutubeParser.h; sourceTree = "<group>"; };
 		6F26786023EC1BE1F3057885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		6F2679B3EB2CF62FE94E8C33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6F267A7B8807BD86B3CA49F0 /* HCYoutubeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCYoutubeParser.m; sourceTree = "<group>"; };
 		6F267ABBC35BDEE16C93E477 /* YPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F267ABD90AF48B214DFDFDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6F267CF017BE48C2CC53527E /* YPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +87,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6F26709DB280332C0DD5F4FC /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				6F267842CCB5B12852B1FCF5 /* HCYoutubeParser.h */,
+				6F267A7B8807BD86B3CA49F0 /* HCYoutubeParser.m */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
 		6F267140CC620D235FD70CF4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +121,7 @@
 				6F26779DEF1B09800532806C /* YPlayerTests */,
 				BCAEE62B3C35F3E2276E30D4 /* Pods */,
 				EDA2B44D8F8BE83C842D7D30 /* Frameworks */,
+				6F26709DB280332C0DD5F4FC /* 3rdParty */,
 			);
 			sourceTree = "<group>";
 		};
@@ -285,6 +298,7 @@
 				6F267618A27A65F3F6FBB29B /* main.m in Sources */,
 				6F26700D04FC5D75F5A79F60 /* ViewController.m in Sources */,
 				6F26774067962220B20F4299 /* PlayerView.m in Sources */,
+				6F267ED572E175D05CDD0E35 /* HCYoutubeParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +332,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = YPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -387,6 +402,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = YPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
