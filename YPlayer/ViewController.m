@@ -13,10 +13,12 @@
 
 
 
-@interface ViewController ()
+@interface ViewController () <PlayerViewDelegate>
 
 @property (weak) IBOutlet NSTextField *inputTextField;
 @property (weak) IBOutlet NSButton *goButton;
+
+@property (weak) IBOutlet NSButton *playPauseButton;
 
 @property (weak) IBOutlet PlayerView *playerView;
 
@@ -32,11 +34,21 @@
 
 	self.playerView.wantsLayer = YES;
 	self.playerView.layer.backgroundColor = [NSColor grayColor].CGColor;
+	self.playerView.delegate = self;
+
+	[[NSNotificationCenter defaultCenter] addObserverForName:@"KeyPlayPauseDidClick" object:nil
+													   queue:[NSOperationQueue mainQueue]
+												  usingBlock:^ (NSNotification * note) {
+													  [self playPauseButtonAction:self.playPauseButton];
+												  }];
 }
 
 - (void) viewWillDisappear
 {
 	[self.playerView stop];
+
+	[[NSNotificationCenter defaultCenter] removeObserver:nil name:@"KeyPlayPauseDidClick"
+												  object:nil];
 }
 
 
@@ -53,5 +65,46 @@
 									[self.playerView setStreamURL:streamURL];
 								}];
 }
+
+- (IBAction) playPauseButtonAction:(NSButton *)sender
+{
+	if ( PlayerViewStateIsPlaying(self.playerView.state) )
+	{
+		[self.playerView pause];
+	}
+	else
+	{
+		[self.playerView play];
+	}
+}
+
+
+- (void) playerView:(PlayerView *)player changedStateToState:(PlayerViewState)to
+{
+	if ( PlayerViewStateIsPlaying(to) )
+	{
+		self.playPauseButton.title = @"||";
+	}
+	else
+	{
+		self.playPauseButton.title = @">";
+	}
+}
+
+- (void) playerView:(PlayerView *)player recievedDuration:(NSTimeInterval)duration
+{
+
+}
+
+- (void) playerView:(PlayerView *)player currentTimeDidChange:(NSTimeInterval)newTime
+{
+
+}
+
+- (void) playerView:(PlayerView *)player didFailedWithPlayingWithError:(NSError *)error
+{
+
+}
+
 
 @end

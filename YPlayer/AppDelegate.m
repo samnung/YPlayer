@@ -8,10 +8,13 @@
 
 
 #import "AppDelegate.h"
+#import "SPMediaKeyTap.h"
 
 
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) SPMediaKeyTap * keyTap;
 
 @end
 
@@ -21,12 +24,51 @@
 
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	// Insert code here to initialize your application
+	self.keyTap = [[SPMediaKeyTap alloc] initWithDelegate:self];
+	if ( [SPMediaKeyTap usesGlobalMediaKeyTap] )
+	{
+		[self.keyTap startWatchingMediaKeys];
+	}
+	else
+	{
+		NSLog(@"Media key monitoring disabled");
+	}
 }
 
 - (void) applicationWillTerminate:(NSNotification *)aNotification
 {
 	// Insert code here to tear down your application
+}
+
+- (void) application:(NSApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+	NSLog(@"userInfo = %@", userInfo);
+}
+
+
+#pragma mark
+
+-(void)mediaKeyTap:(SPMediaKeyTap*)keyTap receivedMediaKeyEvent:(NSEvent*)event
+{
+	NSAssert([event type] == NSSystemDefined && [event subtype] == SPSystemDefinedEventMediaKeys, @"Unexpected NSEvent in mediaKeyTap:receivedMediaKeyEvent:");
+	// here be dragons...
+	int keyCode = (([event data1] & 0xFFFF0000) >> 16);
+	int keyFlags = ([event data1] & 0x0000FFFF);
+	BOOL keyIsPressed = (((keyFlags & 0xFF00) >> 8)) == 0xA;
+	int keyRepeat = (keyFlags & 0x1);
+
+	if ( keyIsPressed )
+	{
+		switch ( keyCode )
+		{
+			case NX_KEYTYPE_PLAY:
+				[[NSNotificationCenter defaultCenter] postNotificationName:@"KeyPlayPauseDidClick" object:self];
+				break;
+
+			default:
+				break;
+		}
+	}
 }
 
 @end

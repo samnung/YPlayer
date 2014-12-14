@@ -669,11 +669,11 @@
             <objects>
                 <viewController id="5gI-5U-AMq" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="ERx-hH-rdd">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="342"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ibk-6D-wmY">
-                                <rect key="frame" x="8" y="240" width="394" height="22"/>
+                                <rect key="frame" x="8" y="312" width="394" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="MIy-6w-n4A">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -681,7 +681,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rOn-qR-WzB">
-                                <rect key="frame" x="416" y="234" width="62" height="32"/>
+                                <rect key="frame" x="416" y="306" width="62" height="32"/>
                                 <buttonCell key="cell" type="push" title="Go!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gOO-4h-09U">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -690,8 +690,18 @@
                                     <action selector="goButtonAction:" target="5gI-5U-AMq" id="3hk-RO-M2f"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KPt-aD-w9L">
+                                <rect key="frame" x="228" y="7" width="24" height="42"/>
+                                <buttonCell key="cell" type="smallSquare" title="&gt;" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="la6-Z3-Yz6">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="30"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="playPauseButtonAction:" target="5gI-5U-AMq" id="TPo-Ln-g1c"/>
+                                </connections>
+                            </button>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="pul-vk-IZ5" customClass="PlayerView">
-                                <rect key="frame" x="8" y="8" width="464" height="224"/>
+                                <rect key="frame" x="8" y="56" width="464" height="248"/>
                             </customView>
                         </subviews>
                         <constraints>
@@ -700,7 +710,9 @@
                             <constraint firstItem="rOn-qR-WzB" firstAttribute="trailing" secondItem="pul-vk-IZ5" secondAttribute="trailing" id="KQr-lJ-Joj"/>
                             <constraint firstItem="rOn-qR-WzB" firstAttribute="leading" secondItem="Ibk-6D-wmY" secondAttribute="trailing" constant="20" id="N6I-4y-wst"/>
                             <constraint firstItem="Ibk-6D-wmY" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" constant="8" id="Qc0-LN-p6t"/>
-                            <constraint firstAttribute="bottom" secondItem="pul-vk-IZ5" secondAttribute="bottom" constant="8" id="Wgc-Yu-3fu"/>
+                            <constraint firstAttribute="centerX" secondItem="KPt-aD-w9L" secondAttribute="centerX" id="TB3-fX-Tx6"/>
+                            <constraint firstAttribute="bottom" secondItem="KPt-aD-w9L" secondAttribute="bottom" constant="8" id="Vpg-hX-2fh"/>
+                            <constraint firstItem="KPt-aD-w9L" firstAttribute="top" secondItem="pul-vk-IZ5" secondAttribute="bottom" constant="8" id="cpD-iD-c2v"/>
                             <constraint firstItem="Ibk-6D-wmY" firstAttribute="leading" secondItem="pul-vk-IZ5" secondAttribute="leading" id="cx6-Sd-oCs"/>
                             <constraint firstItem="Ibk-6D-wmY" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" constant="8" id="lCM-oo-Ghh"/>
                             <constraint firstItem="rOn-qR-WzB" firstAttribute="baseline" secondItem="Ibk-6D-wmY" secondAttribute="baseline" constant="-2" id="yMk-jJ-WyH"/>
@@ -709,12 +721,13 @@
                     <connections>
                         <outlet property="goButton" destination="rOn-qR-WzB" id="eU2-C6-MeS"/>
                         <outlet property="inputTextField" destination="Ibk-6D-wmY" id="zXY-tW-9Uc"/>
+                        <outlet property="playPauseButton" destination="KPt-aD-w9L" id="eAu-m3-bUs"/>
                         <outlet property="playerView" destination="pul-vk-IZ5" id="Taq-g2-NSI"/>
                     </connections>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="735"/>
         </scene>
     </scenes>
 </document>

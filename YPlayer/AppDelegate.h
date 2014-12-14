@@ -11,6 +11,10 @@
 
 
 
+@class SPMediaKeyTap;
+
+
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @end

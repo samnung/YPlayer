@@ -13,6 +13,8 @@
 		6F2673EA368C042427CD0835 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2671DC34505614B4DA7F3F /* Main.storyboard */; };
 		6F267618A27A65F3F6FBB29B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F26721E80D8BF3F8FD567F1 /* main.m */; };
 		6F26774067962220B20F4299 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2672C64421955C217FA262 /* PlayerView.m */; };
+		6F267ABD43D6F820A881B41C /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F267C0D9331704740599BA7 /* SPMediaKeyTap.m */; };
+		6F267BBF9630E6FFEEC48A36 /* NSObject+SPInvocationGrabbing.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F267810EE601FA51AA60EB3 /* NSObject+SPInvocationGrabbing.m */; };
 		6F267CB346129C860BF93646 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F267ABD90AF48B214DFDFDE /* AppDelegate.m */; };
 		6F267ED572E175D05CDD0E35 /* HCYoutubeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F267A7B8807BD86B3CA49F0 /* HCYoutubeParser.m */; };
 		DC4D81FD96BBBC92F5A6E1C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 269E7F7D7FF6879984721775 /* libPods.a */; };
@@ -33,17 +35,21 @@
 		6F26712C8CCB035841CA24C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		6F267133807723F1D05E3463 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6F26721E80D8BF3F8FD567F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6F267220B37F6F13388FCF43 /* NSObject+SPInvocationGrabbing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPInvocationGrabbing.h"; sourceTree = "<group>"; };
 		6F2672C64421955C217FA262 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		6F2674291C0A50A517CF3623 /* SPMediaKeyTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMediaKeyTap.h; sourceTree = "<group>"; };
 		6F26763ADC3B6A492E0E812C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F2676638F5B64721D415160 /* YPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPlayerTests.m; sourceTree = "<group>"; };
 		6F26767D8E1CC0F31B740AC8 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
 		6F2677CA9B2752C9A7F2ED62 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6F267810EE601FA51AA60EB3 /* NSObject+SPInvocationGrabbing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPInvocationGrabbing.m"; sourceTree = "<group>"; };
 		6F267842CCB5B12852B1FCF5 /* HCYoutubeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCYoutubeParser.h; sourceTree = "<group>"; };
 		6F26786023EC1BE1F3057885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		6F2679B3EB2CF62FE94E8C33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6F267A7B8807BD86B3CA49F0 /* HCYoutubeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCYoutubeParser.m; sourceTree = "<group>"; };
 		6F267ABBC35BDEE16C93E477 /* YPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F267ABD90AF48B214DFDFDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6F267C0D9331704740599BA7 /* SPMediaKeyTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMediaKeyTap.m; sourceTree = "<group>"; };
 		6F267CF017BE48C2CC53527E /* YPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F267E1B10C5E153E598A382 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		706A6FF5CD50F9E3212EA804 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +98,10 @@
 			children = (
 				6F267842CCB5B12852B1FCF5 /* HCYoutubeParser.h */,
 				6F267A7B8807BD86B3CA49F0 /* HCYoutubeParser.m */,
+				6F2674291C0A50A517CF3623 /* SPMediaKeyTap.h */,
+				6F267C0D9331704740599BA7 /* SPMediaKeyTap.m */,
+				6F267220B37F6F13388FCF43 /* NSObject+SPInvocationGrabbing.h */,
+				6F267810EE601FA51AA60EB3 /* NSObject+SPInvocationGrabbing.m */,
 			);
 			path = 3rdParty;
 			sourceTree = "<group>";
@@ -299,6 +309,8 @@
 				6F26700D04FC5D75F5A79F60 /* ViewController.m in Sources */,
 				6F26774067962220B20F4299 /* PlayerView.m in Sources */,
 				6F267ED572E175D05CDD0E35 /* HCYoutubeParser.m in Sources */,
+				6F267ABD43D6F820A881B41C /* SPMediaKeyTap.m in Sources */,
+				6F267BBF9630E6FFEEC48A36 /* NSObject+SPInvocationGrabbing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
