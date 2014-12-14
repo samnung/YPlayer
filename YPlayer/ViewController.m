@@ -8,6 +8,15 @@
 
 
 #import "ViewController.h"
+#import "PlayerView.h"
+
+
+
+@interface ViewController ()
+
+@property (weak) IBOutlet PlayerView *someView;
+
+@end
 
 
 
@@ -17,14 +26,11 @@
 {
 	[super viewDidLoad];
 
+	self.someView.wantsLayer = YES;
+	self.someView.layer.backgroundColor = [NSColor grayColor].CGColor;
+	[self.someView setStreamURL:[NSURL URLWithString:@"https://archive.org/download/Pbtestfilemp4videotestmp4/video_test.mp4"]];
+
 	NSLog(@"viewDidLoad");
-}
-
-- (void) setRepresentedObject:(id)representedObject
-{
-	[super setRepresentedObject:representedObject];
-
-	// Update the view, if already loaded.
 }
 
 @end
