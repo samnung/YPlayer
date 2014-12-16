@@ -15,10 +15,82 @@
 #endif
 
 
-#define kYoutubeInfoURL      @"http://www.youtube.com/get_video_info?video_id="
+#define kYoutubeInfoURL      @"https://www.youtube.com/get_video_info?eurl=http%3A%2F%2Fwww%2Eyoutube%2Ecom%2F&asv=3&sts=15992&el=vevo&video_id="
 #define kYoutubeThumbnailURL @"http://img.youtube.com/vi/%@/%@.jpg"
 #define kYoutubeDataURL      @"http://gdata.youtube.com/feeds/api/videos/%@?alt=json"
 #define kUserAgent @"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.79 Safari/537.4"
+
+
+
+static NSArray * clone(NSArray * a, NSUInteger b)
+{
+	// return a.slice(b);
+	return [a subarrayWithRange:NSMakeRange(b, a.count - b)];
+}
+// swap: function(a, b) {
+static NSArray * swap(NSArray *a, NSUInteger b)
+{
+	NSMutableArray * array = [NSMutableArray arrayWithArray:a];
+
+	// var t1, t2;
+	id t1, t2;
+
+	// t1 = a[0];
+	t1 = array.firstObject;
+
+	// t2 = a[b % a.length];
+	t2 = array[b % a.count];
+
+	// a[0] = t2;
+	array[0] = t2;
+
+	// a[b] = t1;
+	array[b] = t1;
+
+	// return a;
+	return array.copy;
+}
+// decipher: function(s) {
+static NSString * decipher(NSString *s)
+{
+	// var t;
+	NSArray * t;
+
+	// t = s.split("");
+	NSMutableArray * t2 = [NSMutableArray array];
+	[s enumerateSubstringsInRange:NSMakeRange(0, s.length)
+						  options:NSStringEnumerationByComposedCharacterSequences
+					   usingBlock:^ (NSString * substring, NSRange substringRange, NSRange enclosingRange, BOOL * stop) {
+						   [t2 addObject:substring];
+					   }];
+	t = t2.copy;
+
+	// t = this.swap(t, 2);
+	t = swap(t, 2);
+
+	// t = this.reverse(t);
+	t = [[t reverseObjectEnumerator] allObjects];
+
+	// t = this.clone(t, 3);
+	t = clone(t, 3);
+
+	// t = this.swap(t, 52);
+	t = swap(t, 52);
+
+	// t = this.clone(t, 2);
+	t = clone(t, 2);
+
+	// t = this.swap(t, 63);
+	t = swap(t, 63);
+
+	// t = this.clone(t, 2);
+	t = clone(t, 2);
+
+	// return t.join("");
+	return [t componentsJoinedByString:@""];
+}
+
+
 
 @interface NSString (QueryString)
 
@@ -145,7 +217,20 @@
 
                             if (signature && [type rangeOfString:@"mp4"].length > 0) {
                                 NSString *url = [[[videoComponents objectForKey:@"url"] objectAtIndex:0] stringByDecodingURLFormat];
-                                url = [NSString stringWithFormat:@"%@&signature=%@", url, signature];
+								NSString * cipheredSignature = [videoComponents[@"sig"] firstObject];
+
+								if ( ! cipheredSignature )
+								{
+									cipheredSignature = [videoComponents[@"s"] firstObject];
+									cipheredSignature = decipher(cipheredSignature);
+								}
+								else
+								{
+									cipheredSignature = signature;
+								}
+
+
+                                url = [NSString stringWithFormat:@"%@&signature=%@", url, cipheredSignature];
 
                                 NSString *quality = [[[videoComponents objectForKey:@"quality"] objectAtIndex:0] stringByDecodingURLFormat];
                                 if ([videoComponents objectForKey:@"stereo3d"] && [[videoComponents objectForKey:@"stereo3d"] boolValue]) {
