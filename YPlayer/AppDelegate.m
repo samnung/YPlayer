@@ -24,6 +24,11 @@
 
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+	[[NSUserDefaults standardUserDefaults] registerDefaults:@{
+		kMediaKeyUsingBundleIdentifiersDefaultsKey : [SPMediaKeyTap defaultMediaKeyUserBundleIdentifiers],
+        @"WebKitDeveloperExtras": @YES,
+    }];
+
 	self.keyTap = [[SPMediaKeyTap alloc] initWithDelegate:self];
 	if ( [SPMediaKeyTap usesGlobalMediaKeyTap] )
 	{
