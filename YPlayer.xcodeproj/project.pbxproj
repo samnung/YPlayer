@@ -10,6 +10,13 @@
 		2BFBAC1428FBC1B943568E96 /* Pods_YPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392196AC44C7A96AECD60C0D /* Pods_YPlayer.framework */; };
 		2F7D04E61C5E500200EC7A5A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7D04E51C5E500200EC7A5A /* WebViewController.swift */; };
 		2FA2CF471CD68FFF007AA045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2CF461CD68FFF007AA045 /* AppDelegate.swift */; };
+		2FA2CF4F1CD6945D007AA045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2CF4E1CD6945D007AA045 /* AppDelegate.swift */; };
+		2FA2CF511CD6945D007AA045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2CF501CD6945D007AA045 /* ViewController.swift */; };
+		2FA2CF541CD6945D007AA045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA2CF521CD6945D007AA045 /* Main.storyboard */; };
+		2FA2CF561CD6945D007AA045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA2CF551CD6945D007AA045 /* Assets.xcassets */; };
+		2FA2CF591CD6945D007AA045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA2CF571CD6945D007AA045 /* LaunchScreen.storyboard */; };
+		2FA2CF5F1CD69492007AA045 /* YouTubeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2CF5E1CD69492007AA045 /* YouTubeWebViewController.swift */; };
+		2FA2CF611CD694EF007AA045 /* YouTubeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2CF5E1CD69492007AA045 /* YouTubeWebViewController.swift */; };
 		6F2671FB22934EC8501CC733 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2679B3EB2CF62FE94E8C33 /* Images.xcassets */; };
 		6F2673EA368C042427CD0835 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2671DC34505614B4DA7F3F /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -17,6 +24,14 @@
 /* Begin PBXFileReference section */
 		2F7D04E51C5E500200EC7A5A /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		2FA2CF461CD68FFF007AA045 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FA2CF4C1CD6945D007AA045 /* YPlayer iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YPlayer iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA2CF4E1CD6945D007AA045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FA2CF501CD6945D007AA045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FA2CF531CD6945D007AA045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FA2CF551CD6945D007AA045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FA2CF581CD6945D007AA045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FA2CF5A1CD6945D007AA045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FA2CF5E1CD69492007AA045 /* YouTubeWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeWebViewController.swift; sourceTree = "<group>"; };
 		2FDDCB910C8490B80F317FA0 /* Pods-YPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPlayer/Pods-YPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		392196AC44C7A96AECD60C0D /* Pods_YPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		450029BE7E36F2E53D77F0A0 /* Pods-YPlayer iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPlayer iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPlayer iOS/Pods-YPlayer iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -30,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2FA2CF491CD6945D007AA045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F267FFCDEE4380B56DCE8DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,6 +63,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FA2CF4D1CD6945D007AA045 /* YPlayer iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2FA2CF4E1CD6945D007AA045 /* AppDelegate.swift */,
+				2FA2CF501CD6945D007AA045 /* ViewController.swift */,
+				2FA2CF521CD6945D007AA045 /* Main.storyboard */,
+				2FA2CF551CD6945D007AA045 /* Assets.xcassets */,
+				2FA2CF571CD6945D007AA045 /* LaunchScreen.storyboard */,
+				2FA2CF5A1CD6945D007AA045 /* Info.plist */,
+			);
+			path = "YPlayer iOS";
+			sourceTree = "<group>";
+		};
+		2FA2CF601CD6949F007AA045 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2FA2CF5E1CD69492007AA045 /* YouTubeWebViewController.swift */,
+			);
+			name = Shared;
+			path = YPlayer/Shared;
+			sourceTree = "<group>";
+		};
 		6F267002ADAA64C0EEEDE75B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				6F267ABBC35BDEE16C93E477 /* YPlayer.app */,
+				2FA2CF4C1CD6945D007AA045 /* YPlayer iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,7 +105,9 @@
 		6F267B91E055DE3F1F14AE43 = {
 			isa = PBXGroup;
 			children = (
+				2FA2CF601CD6949F007AA045 /* Shared */,
 				6F267C748C575D98A5CDF25D /* YPlayer */,
+				2FA2CF4D1CD6945D007AA045 /* YPlayer iOS */,
 				6F2670627AE88563F6C6083D /* Products */,
 				B14DC4172A4D39CF85864117 /* Pods */,
 				FFDDDB89E35397275343F188 /* Frameworks */,
@@ -102,6 +149,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2FA2CF4B1CD6945D007AA045 /* YPlayer iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FA2CF5B1CD6945D007AA045 /* Build configuration list for PBXNativeTarget "YPlayer iOS" */;
+			buildPhases = (
+				2FA2CF481CD6945D007AA045 /* Sources */,
+				2FA2CF491CD6945D007AA045 /* Frameworks */,
+				2FA2CF4A1CD6945D007AA045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YPlayer iOS";
+			productName = "YPlayer iOS";
+			productReference = 2FA2CF4C1CD6945D007AA045 /* YPlayer iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6F26795D74DF4CB03D9CB178 /* YPlayer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F26702BC70E9791283AB565 /* Build configuration list for PBXNativeTarget "YPlayer" */;
@@ -131,6 +195,9 @@
 				LastSwiftUpdateCheck = 0730;
 				ORGANIZATIONNAME = "Roman Kříž";
 				TargetAttributes = {
+					2FA2CF4B1CD6945D007AA045 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					6F26795D74DF4CB03D9CB178 = {
 						DevelopmentTeam = P36MPV2ZKM;
 					};
@@ -150,11 +217,22 @@
 			projectRoot = "";
 			targets = (
 				6F26795D74DF4CB03D9CB178 /* YPlayer */,
+				2FA2CF4B1CD6945D007AA045 /* YPlayer iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2FA2CF4A1CD6945D007AA045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA2CF591CD6945D007AA045 /* LaunchScreen.storyboard in Resources */,
+				2FA2CF561CD6945D007AA045 /* Assets.xcassets in Resources */,
+				2FA2CF541CD6945D007AA045 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F267A4FFBA5EDFE6EC20DA9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,18 +293,45 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2FA2CF481CD6945D007AA045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA2CF511CD6945D007AA045 /* ViewController.swift in Sources */,
+				2FA2CF4F1CD6945D007AA045 /* AppDelegate.swift in Sources */,
+				2FA2CF611CD694EF007AA045 /* YouTubeWebViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F2679B68D962C7AB4716A3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2FA2CF471CD68FFF007AA045 /* AppDelegate.swift in Sources */,
 				2F7D04E61C5E500200EC7A5A /* WebViewController.swift in Sources */,
+				2FA2CF5F1CD69492007AA045 /* YouTubeWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2FA2CF521CD6945D007AA045 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FA2CF531CD6945D007AA045 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FA2CF571CD6945D007AA045 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FA2CF581CD6945D007AA045 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		6F2671DC34505614B4DA7F3F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -238,6 +343,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2FA2CF5C1CD6945D007AA045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "YPlayer iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.kriz.YPlayer-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FA2CF5D1CD6945D007AA045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "YPlayer iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.kriz.YPlayer-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		6F2674FAA6470E73DB724B97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E009FDA1566B9129F620CB6 /* Pods-YPlayer.release.xcconfig */;
@@ -346,6 +490,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2FA2CF5B1CD6945D007AA045 /* Build configuration list for PBXNativeTarget "YPlayer iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FA2CF5C1CD6945D007AA045 /* Debug */,
+				2FA2CF5D1CD6945D007AA045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6F26702BC70E9791283AB565 /* Build configuration list for PBXNativeTarget "YPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
